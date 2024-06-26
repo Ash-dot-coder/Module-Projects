@@ -30,22 +30,47 @@ main {
     width: 230px;
     height: 97vh;
     color: black;
-    position: sticky;
+    /* position: sticky; */
     top: 72px;
 }
 
-/* .sidebar h3{
+.sidebar h3 {
     color: #53585f;
+    /* margin-left: 1.6rem; */
+}
+
+/* .sidebar ul{
+    background: burlywood;
+  left: 0; 
 } */
 
-li {
+.sidebar hr {
+    margin-left: 2.4rem;
+}
+
+.brand input,
+.brand li,
+.brand a {
+    visibility: hidden;
+}
+
+.sidebar li {
     list-style: none;
+}
+
+.sidebar h3,
+a {
+    font-family: "Rubik", sans-serif;
 }
 
 .sidebar a {
     color: orange;
-    font-weight: bolder;
-    font-family: "Rubik", sans-serif;
+    font-weight: 551;
+}
+
+.brand h3 {
+    padding: 0;
+    margin: 0;
 }
 
 /* .brand .search-box{
@@ -98,8 +123,8 @@ li {
     height: auto;
 }
 
-.text-product{
-    width: 14rem;
+.text-product {
+    width: 13.2rem;
     margin: auto;
     /* background-color: brown; */
 }
@@ -112,9 +137,10 @@ li {
 
 .product-name {
     font-size: 2.1vh;
-    /* word-break:keep-all; */
+    word-break:keep-all;
     font-weight: 550;
     font-family: "Rubik", sans-serif;
+    text-align: center;
 }
 
 .price-tag {
@@ -122,34 +148,35 @@ li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.price-tag span:first-child {
+.old-price {
     text-decoration: line-through;
 }
 
-.price-tag span:nth-child(2){
+.current-price {
     color: brown;
     font-weight: 632;
     font-family: "Rubik", sans-serif;
 }
 
-.price-tag span:nth-child(3){
+.offer{
     font-size: 1.98vh;
     color: red;
 }
 
-.add-button{
+.add-button {
     margin-top: 1.1rem;
 }
 
-.add-button button{
+.add-button button {
     border-radius: 2.2rem;
     padding: 0.34rem 1.2rem;
+    background: transparent;
     font-size: 1.02rem;
     transition: 0.3s ease-out;
-    border: 0.3px solid gray;
+    border: 0.1px solid gray;
 }
 
-.add-button button:hover{
+.add-button button:hover {
     cursor: pointer;
     transform: scale(1.02);
     transition: 0.2s ease-in;
