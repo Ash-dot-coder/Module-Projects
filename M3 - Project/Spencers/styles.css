@@ -1,7 +1,17 @@
-/* *{
-    margin: 0;
-    padding: 0;
-} */
+*{
+    box-sizing: border-box;
+}
+
+.home-gc {
+    margin-left: 6rem;
+    font-size: 2vh;
+    color: gray;
+}
+
+.home-gc .h1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 .heading {
     text-align: center;
@@ -9,6 +19,7 @@
 
 main {
     display: flex;
+    justify-content: center;
 }
 
 .sidebar {
@@ -66,19 +77,30 @@ li {
     width: 243px;
     height: 68vh;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.6s ease;
+    text-transform: uppercase;
 }
 
-.product-image{
+.products:hover {
+    transform: scale(1.01);
+    transition: 0.5s ease-in;
+    box-shadow: 0 0 7px black;
+}
+
+.product-image {
     margin: auto;
     height: auto;
 }
 
-.products h3{
+.products h3 {
     color: gray;
     font-weight: lighter;
+    font-size: 2.1vh;
 }
 
-.product-name{
-    font-size: 1.5rem;
+.product-name {
+    font-size: 2.07vh;
     /* word-break:keep-all; */
+    font-weight: 550;
 }
