@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 
-.home-gc {
+/* Upper Heading */
+.home-gs {
     margin-left: 6rem;
     font-size: 2vh;
     color: gray;
 }
 
-.home-gc .h1:hover {
+.home-gs .h1:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -19,43 +20,39 @@
     text-align: center;
 }
 
+/* Main Content */
 main {
     display: flex;
     justify-content: center;
 }
 
+/* Sidebar */
 .sidebar {
-    /* background-color: red;
-    border: 2px solid black; */
-    width: 230px;
+    width: 14.375rem;
     height: 97vh;
     color: black;
-    /* position: sticky; */
-    top: 72px;
+    margin-right: 1.82rem;
+}
+
+.sidebar-head{
+    display: flex;
+    justify-content: space-between;
 }
 
 .sidebar h3 {
-    color: #53585f;
+    color: #65676b;
     /* margin-left: 1.6rem; */
 }
 
-/* .sidebar ul{
-    background: burlywood;
-  left: 0; 
-} */
-
-.sidebar hr {
-    margin-left: 2.4rem;
+.sidebar .bottom {
+    border-bottom: 0.0125em solid rgb(169, 167, 167);
 }
 
-.brand input,
-.brand li,
-.brand a {
-    visibility: hidden;
-}
 
-.sidebar li {
+.sidebar li,
+a {
     list-style: none;
+    margin-left: -1.87em;
 }
 
 .sidebar h3,
@@ -68,27 +65,13 @@ a {
     font-weight: 551;
 }
 
-.brand h3 {
-    padding: 0;
+.sidebar h3 {
+    padding: 0.39em;
     margin: 0;
 }
 
-/* .brand .search-box{
-    height: 35px;
-    line-height: 24px;
-    margin: 0;
-    padding: 0;
-    outline: medium none;
-    width: 100%;
-    border-width: 0 0 1px;
-    border-style: solid;
-} */
 
-/* .upper-show{
-    display: flex;
-    justify-content: space-between;
-} */
-
+/* Main Content */
 .main-content {
     width: 72%;
     /* background: blueviolet;
@@ -138,7 +121,7 @@ a {
 
 .product-name {
     font-size: 2.1vh;
-    word-break:keep-all;
+    word-break: keep-all;
     font-weight: 550;
     font-family: "Rubik", sans-serif;
     text-align: center;
@@ -159,7 +142,7 @@ a {
     font-family: "Rubik", sans-serif;
 }
 
-.offer{
+.offer {
     font-size: 1.98vh;
     color: red;
 }
@@ -188,7 +171,7 @@ a {
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .home-gc {
+    .home-gs {
         margin-left: 3rem;
         font-size: 1.8vh;
     }
@@ -233,7 +216,7 @@ a {
 }
 
 @media (max-width: 480px) {
-    .home-gc {
+    .home-gs {
         margin-left: 1rem;
         font-size: 1.5vh;
     }
@@ -242,7 +225,9 @@ a {
         font-size: 1.8rem;
     }
 
-    .sidebar h3, .sidebar li, .sidebar a {
+    .sidebar h3,
+    .sidebar li,
+    .sidebar a {
         font-size: 1rem;
     }
 
@@ -252,7 +237,12 @@ a {
         font-size: 1rem;
     }
 
-    .products h3, .product-name, .price-tag, .old-price, .current-price, .offer {
+    .products h3,
+    .product-name,
+    .price-tag,
+    .old-price,
+    .current-price,
+    .offer {
         font-size: 1.5vh;
     }
 
