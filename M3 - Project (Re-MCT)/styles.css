@@ -116,7 +116,7 @@ nav li input {
     cursor: pointer;
     color: rgb(3, 131, 88);
     transition: 0.4s ease-in-out;
-    font-size: 0.78rem;
+    /* font-size: 0.78rem; */
 }
 
 /* External Added */
