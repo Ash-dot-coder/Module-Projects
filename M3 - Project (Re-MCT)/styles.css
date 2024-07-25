@@ -73,7 +73,7 @@ nav li input {
     font-weight: bold;
 }
 
-.Login-li:hover {
+.Login-li:hover, li svg:hover, .lang-select select:hover {
     text-decoration: none;
     cursor: pointer;
 }
@@ -87,6 +87,10 @@ nav li input {
     border-left: 0.389rem solid rgb(255, 217, 0);
     border-right: 0.389rem solid #108ac7;
     border-bottom: 0.389rem solid rgb(176, 90, 4);
+}
+
+.box-sell button:hover{
+    cursor: pointer;
 }
 
 .sub-section {
