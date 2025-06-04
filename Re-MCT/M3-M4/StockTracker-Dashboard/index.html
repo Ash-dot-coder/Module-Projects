@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Stock Market Data</h2>
+        <div class="input-group">
+            <input type="text" id="stockSymbol" placeholder="Enter Stock Symbol">
+            <button onclick="fetchStockData()">Get Stock Data</button>
+        </div>
+    
+        <div class="company-info">
+            <p class="company-name" id="companyName">-</p>
+            <p class="stock-price-info">
+                <span class="stock-price" id="stockPrice">-</span>
+                <span class="stock-change" id="stockChange">-</span>
+            </p>
+            <p class="company-description" id="companyDescription">-</p>
+        </div>
+    
+        <div class="tables">
+            <table>
+                <tr><th>Sector</th><td id="sector">-</td></tr>
+                <tr><th>Previous Close</th><td id="previousClose">-</td></tr>
+                <tr><th>Open</th><td id="stockOpen">-</td></tr>
+                <tr><th>High</th><td id="stockHigh">-</td></tr>
+                <tr><th>Low</th><td id="stockLow">-</td></tr>
+                <tr><th>Volume</th><td id="stockVolume">-</td></tr>
+                <tr><th>52-Week High</th><td id="stock52WeekHigh">-</td></tr>
+                <tr><th>52-Week Low</th><td id="stock52WeekLow">-</td></tr>
+         </table>
+        <table>
+                <tr><th>Market Cap</th><td id="marketCap">-</td></tr>
+                <tr><th>Book Value</th><td id="bookValue">-</td></tr>
+                <tr><th>EPS</th><td id="eps">-</td></tr>
+                <tr><th>Beta</th><td id="beta">-</td></tr>
+                <tr><th>EBITDA</th><td id="ebitda">-</td></tr>
+                <tr><th>P/E Ratio</th><td id="peRatio">-</td></tr>
+                <tr><th>Dividend Yield</th><td id="dividendYield">-</td></tr>
+                <tr><th>200 DMA</th><td id="dayMovingAverage">-</td></tr>
+        </table>
+    </div>
+        <div class="button-group">
+            <button class="buy-btn">Buy</button>
+            <button class="sell-btn">Sell</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
